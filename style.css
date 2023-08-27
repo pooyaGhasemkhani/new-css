@@ -17,7 +17,7 @@ body{
     background-color: white;
     width: 80vw ;
     height: auto ;
-    box-shadow: 5px 5px 50px 5px black;
+    box-shadow: 5px 5px 50px 5px rgb(0, 0, 0);
     border-radius: 7px;
 
 }
