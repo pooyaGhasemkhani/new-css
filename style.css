@@ -41,49 +41,66 @@ body{
 
 }
 
-.cards{
+.card1{
     display: flex;
-    justify-content: center;
     flex-direction: row;
     gap: 20px;
     padding-bottom: 100px;
-    padding: 20px;
-    
+    padding: 20px;  
+    justify-content:space-evenly;
 }
 .card2{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
+    padding-bottom: 100px;
+    padding: 20px;  
+    justify-content:space-evenly;
+
 }
-.card1{
-    gap: 20px;
-}
-.card1, .card3{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.cards1, .cards4, .cards5{
+.cards1{
+    position: absolute;
+    margin-top: 132px;
+    margin-right: 644px;
     border-top: 2px solid aqua;
 }
+
 .cards2{
     border-top: 2px solid red;
 }
+
 .cards3{
-    border-top: 2px solid yellow;
+    border-top: 2px solid yellow ;
 }
-.cards5{display: none;}
+
+  .cards4{
+    position: absolute;
+    margin: -138px;
+    margin-left: -138px;
+  margin-left: 504px;
+  border-top: 2px solid aqua;
+
+}
 
 .cardContent{
-padding-left: 15px;    
-}
-i{
-    padding-left: 230px;
-    padding-top: 20px;
-}
+    padding-left: 15px;    
+    }
+    i{
+        padding-left: 230px;
+        padding-top: 20px;
+    }
+    
+
 
 @media screen and (max-width: 1225px){
-    .cards{
+    .card1{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        gap: 20px;        
+    }
+
+    .card2{
         display: flex;
         justify-content: space-around;
         flex-direction: row;
@@ -91,34 +108,33 @@ i{
         padding-bottom: 100px;
         
     }
-
+    .cards1{
+        position: relative;
+        margin: 0px;
+        margin-left: 0px;
+      margin-left: 0px;
     
-    .card2{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
     }
-    .card3{
-        display: none;
+
+    .cards4{
+        position: relative;
+        margin: 0px;
+        margin-left: 0px;
+      margin-left: 0px;
+    
     }
-    .cards5{display: inline;}
+
     
 }
 
-@media screen and (max-width: 850px){
-    .cards5{
-        display: inline;
-    }
-    .card3{
-        display: none;
-    }
+@media screen and (max-width: 800px){
 
-
-    .cards{
-        display: flex;
+    .card1{
         flex-direction: column;
-        justify-content: center;
-        padding-bottom: 100px;
+        align-items: center;
+    }
+    .card2{
+        flex-direction: column;
         align-items: center;
     }
 
