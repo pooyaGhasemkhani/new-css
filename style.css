@@ -21,14 +21,14 @@ body{
     border-radius: 7px;
 
 }
-.header{
+.box_header{
     text-align: center;
 }
-.header > h1,p{
+.box_header_h1,.box_header_p{
     color: gray;
 
 }
-.header > h2,p{
+.box_header_h2,.box_header_p{
     text-align: center;
     margin-top: -15px;
 }
@@ -41,7 +41,7 @@ body{
 
 }
 
-.card1{
+.cards_card1{
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -49,7 +49,7 @@ body{
     padding: 20px;  
     justify-content:space-evenly;
 }
-.card2{
+.cards_card2{
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -58,22 +58,22 @@ body{
     justify-content:space-evenly;
 
 }
-.cards1{
+.card1_cards1{
     position: absolute;
     margin-top: 132px;
     margin-right: 644px;
     border-top: 2px solid aqua;
 }
 
-.cards2{
+.card1_cards2{
     border-top: 2px solid red;
 }
 
-.cards3{
+.card2_cards3{
     border-top: 2px solid yellow ;
 }
 
-  .cards4{
+  .card2_cards4{
     position: absolute;
     margin: -138px;
     margin-left: -138px;
@@ -82,25 +82,31 @@ body{
 
 }
 
-.cardContent{
+.card_content{
     padding-left: 15px;    
     }
-    i{
+    .fa{
+        font-size:48px;
         padding-left: 230px;
         padding-top: 20px;
+    }
+    
+    .card_content_p{
+        width: 200px;
+        text-align: left;
     }
     
 
 
 @media screen and (max-width: 1225px){
-    .card1{
+    .cards_card1{
         display: flex;
         justify-content: space-around;
         flex-direction: row;
         gap: 20px;        
     }
 
-    .card2{
+    .cards_card2{
         display: flex;
         justify-content: space-around;
         flex-direction: row;
@@ -108,7 +114,7 @@ body{
         padding-bottom: 100px;
         
     }
-    .cards1{
+    .card1_cards1{
         position: relative;
         margin: 0px;
         margin-left: 0px;
@@ -116,7 +122,7 @@ body{
     
     }
 
-    .cards4{
+    .card2_cards4{
         position: relative;
         margin: 0px;
         margin-left: 0px;
@@ -129,11 +135,11 @@ body{
 
 @media screen and (max-width: 800px){
 
-    .card1{
+    .cards_card1{
         flex-direction: column;
         align-items: center;
     }
-    .card2{
+    .cards_card2{
         flex-direction: column;
         align-items: center;
     }
